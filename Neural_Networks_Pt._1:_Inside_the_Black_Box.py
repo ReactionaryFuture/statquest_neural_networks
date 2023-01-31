@@ -21,7 +21,7 @@ class Neuron():
         return output
 
 
-def fprop(input):
+def forward_prop(input):
     # lists of activation values for each layer of neural net
     l1a = [n.activate(input, act_func=True ) for n in nn[0]]
     l2a = [n.activate(  l1a, act_func=False) for n in nn[1]]
@@ -29,8 +29,8 @@ def fprop(input):
 
 def plot():
     # Plot x on x axis and f(x) on y axis for each 100th between 0 and 1
-    Xs = [       i/100   for i in range(100)]
-    Ys = [fprop([i/100]) for i in range(100)]
+    Xs = [              i/100   for i in range(100)]
+    Ys = [forward_prop([i/100]) for i in range(100)]
     plt.scatter(Xs, Ys, color='green')
     plt.show()
 
