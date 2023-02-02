@@ -1,6 +1,6 @@
 
-# To follow along with this code navigate to working directory in console and
-# run the following command "python3 -i neural_networks_pt_1_02.py"
+# To follow along with this code navigate to repo directory in console and
+# run the following command "python3 -i neural_networks_pt_1.py"
 # You will then be able to evalue functions as we go along in Python IDLE.
 
 import math as m
