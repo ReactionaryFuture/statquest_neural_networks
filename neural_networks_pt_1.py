@@ -44,9 +44,12 @@ def predict_future_dosage_effectiveness(future_dosage):
 
 # A neural network consists of nodes and connections between the nodes.
 class Node():
+    
     def __init__(self, weights, bias):
         self.weights = weights
         self.bias    = bias
+
+        
 # These values come from the video @T=3:37
 # Note: the numbers along each connection represent paramater values that were
 # estimated when this Neural Network was fit to the data
