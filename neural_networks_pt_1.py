@@ -1,15 +1,17 @@
 
-# To follow along with this code navigate to repo directory in console and
-# run the following command "python3 -i neural_networks_pt_1"
+# To follow along with this code navigate to working directory in console and
+# run the following command "python3 -i neural_networks_pt_1_02.py"
 # You will then be able to evalue functions as we go along in Python IDLE.
 
 import math as m
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 #############
 # Section 2 #
 #############
+
 
 # Lets imagine we designed a drug and we gave the drug to three different groups
 # of people with three different dosages.
@@ -34,14 +36,13 @@ def predict_future_dosage_effectiveness(future_dosage):
     # predict 2 of the 3 dosages.
     # The good news is that a neural network can fit a squiggle to the data.
     question = future_dosage
-    return neural_network_predictions([question])
+    return neural_network_predictions(question)
 
-def neural_network_predictions(questions):
-    return "we'll come back to me later"
 
 #############
 # Section 3 #
 #############
+
 
 # A neural network consists of nodes and connections between the nodes.
 class Node():
@@ -71,9 +72,11 @@ def graph_softplus():
     # Plot Xs and Ys
     plt.scatter(Xs, Ys, color='black'); plt.show()
 
+
 #############
 # Section 4 #
 #############
+
 
 # @~T=8:17
 # Lets make this function that takes a neuron and an input and return how 
@@ -87,16 +90,16 @@ def activate_neuron(inputs, neuron, act_func):
     if act_func: output = softplus(output)
     return output
 
-
 # From this point forward for atleast a little while curves will be reffered to
 # by their color in the video and commentary from myself will be kept to a
 # minimum. Follow closely along with the video and evaluate these fuctions when
 # appropreate. 
 
+# We'll use these values a lot. Lets just assign these once.
 nn = neural_network
 Xs = [i/1000 for i in range(1000)]
 
-# @~T=10:15
+# @T=10:15
 def graph_blue_1(*args):
     Ys = [activate_neuron([x], nn[0][0], act_func=True) for x in Xs]
     plt.scatter(Xs, Ys, color='deepskyblue')
@@ -134,18 +137,31 @@ def graph_orange_2(*args):
 
 # @T=14.59
 # Lets define a forward propagation for the whole network called
-# neural_network_predictions().
-def neural_network_predictions(questions):
-    l1a = [activate_neuron([questions], n, act_func=True ) for n in nn[0]]
-    l2a = [activate_neuron(        l1a, n, act_func=False) for n in nn[1]]
+# neural_network_predictions(). The function is deisgned to take question as a
+# list to make it genralizable to multiple inputs in the future. Inorder to
+# take a single input it needs to simply be passed a singleton list.
+def neural_network_prediction(question):
+    l1a = [activate_neuron(question, n, act_func=True ) for n in nn[0]]
+    l2a = [activate_neuron(      l1a, n, act_func=False) for n in nn[1]]
     return l2a
 
 # And finally lets graph the whole neural network, combine the previous lines, 
 # and see that green squiggle.
-def graph_neural_network():
+def graph_neural_network_precitions():
     graph_blue_2(1)
     graph_orange_2(1)
-    Ys = [neural_network_predictions(x) for x in Xs]
+    Ys = [neural_network_prediction(x) for x in Xs]
     plt.scatter(Xs, Ys, color='green'); plt.show()
 
-# bam
+
+#############
+# Section 5 #
+#############
+
+
+# @T=15:24
+# We can test with 0.5 and see that indeed we get a matching result from the 
+# video. The result comes as a list since we will want the ability to receive
+# results as lists in the future.
+def test_with_zero_point_5():
+    print(neural_network_prediction([0.5]))
