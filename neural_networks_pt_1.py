@@ -15,17 +15,17 @@ import matplotlib.pyplot as plt
 # Lets imagine we designed a drug and we gave the drug to three different groups
 # of people with three different dosages.
 
+#   Yes(1)  |           ooo
+#     ^     |
+# Efficancy |
+#     v     |
+#   No(0)   |ooo___________________ooo          
+#            Low(0) < Dosage > High(1) 
+
 dosages    = [0.01, 0.02, 0.03, 0.49, 0.50, 0.51, 0.97, 0.98, 0.99]
 efficancys = [0.01, 0.02, 0.03, 0.98, 0.99, 0.98, 0.03, 0.02, 0.01]
 questions       = dosages
 correct_answers = efficancys
-
-#   Yes(1)  |          ooo
-#     ^     |
-# Efficancy |
-#     v     |
-#   No(0)   |ooo_________________ooo          
-#            Low(0) <Dosage> High(1) 
 
 # Now that we have this data we would like to use it to predict whether or not
 # future dosages will be effective.
