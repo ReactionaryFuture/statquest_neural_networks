@@ -4,7 +4,6 @@
 # You will then be able to evalue functions as we go along in Python IDLE.
 
 import math as m
-import numpy as np
 import matplotlib.pyplot as plt
 
 
