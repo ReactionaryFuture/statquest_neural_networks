@@ -12,7 +12,6 @@ import matplotlib.pyplot as plt
 # Section 2 #
 #############
 
-
 # Lets imagine we designed a drug and we gave the drug to three different groups
 # of people with three different dosages.
 
@@ -42,7 +41,6 @@ def predict_future_dosage_effectiveness(future_dosage):
 #############
 # Section 3 #
 #############
-
 
 # A neural network consists of nodes and connections between the nodes.
 class Node():
@@ -76,7 +74,6 @@ def graph_softplus():
 #############
 # Section 4 #
 #############
-
 
 # @~T=8:17
 # Lets make this function that takes a neuron and an input and return how 
@@ -158,10 +155,10 @@ def graph_neural_network_precitions():
 # Section 5 #
 #############
 
-
 # @T=15:24
 # We can test with 0.5 and see that indeed we get a matching result from the 
 # video. The result comes as a list since we will want the ability to receive
 # results as lists in the future.
 def test_with_zero_point_5():
     print(neural_network_prediction([0.5]))
+ 
