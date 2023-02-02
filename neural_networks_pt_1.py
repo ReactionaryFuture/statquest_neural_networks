@@ -161,6 +161,6 @@ def graph_neural_network_precitions():
 # We can test with 0.5 and see that indeed we get a matching result from the 
 # video. The result comes as a list since we will want the ability to receive
 # results as lists in the future.
-def test_with_zero_point_5():
+def test_with_0_point_5():
     print(neural_network_prediction([0.5]))
  
