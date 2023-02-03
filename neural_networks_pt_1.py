@@ -21,8 +21,8 @@ import matplotlib.pyplot as plt
 #   No(0)   |ooo___________________ooo          
 #            Low(0) < Dosage > High(1) 
 
-dosages    = [0.01, 0.02, 0.03, 0.49, 0.50, 0.51, 0.97, 0.98, 0.99]
-efficancys = [0.01, 0.02, 0.03, 0.98, 0.99, 0.98, 0.03, 0.02, 0.01]
+dosages    = [0.0, 0.0, 0.0, 0.5, 0.5, 0.5, 1.0, 1.0, 1.0]
+efficancys = [0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0]
 questions       = dosages
 correct_answers = efficancys
 
