@@ -1,6 +1,6 @@
 
-# This document is intended as a study companion to go along with "Neural
-# Networks Pt. 2: Backpropagation Main Ideas by StatQuest with Josh Starmer
+# This document is intended as a study companion for with "Neural Networks 
+# Pt. 2: Backpropagation Main Ideas by StatQuest with Josh Starmer
 # URL: https://www.youtube.com/watch?v=IN2XmBhILt4
 
 # To follow along with this code navigate to repo directory in console and
@@ -40,8 +40,7 @@ nn = [[Node([3.34        ], -1.43), Node([-3.53], 0.57)],
 def nnp(question):
     l1a = [n.activate(question, act_func=True ) for n in nn[0]]
     l2a = [n.activate(     l1a, act_func=False) for n in nn[1]]
-    prediction = l2a
-    return prediction
+    return l2a
 
 Xs = [i/1000 for i in range(1000)]
 
