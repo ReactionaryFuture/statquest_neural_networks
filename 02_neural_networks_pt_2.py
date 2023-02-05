@@ -1,12 +1,16 @@
 
+# This document is intended as a study companion to go along with "Neural
+# Networks Pt. 2: Backpropagation Main Ideas by StatQuest with Josh Starmer
+# URL: https://www.youtube.com/watch?v=IN2XmBhILt4
+
 # To follow along with this code navigate to repo directory in console and
-# run the following command "python3 -i neural_networks_pt_2.py"
+# run the following command "python3 -i 02_backpropagation_main_ideas"
 # You will then be able to evalue functions as we go along in Python IDLE.
 
 import math as m
 import matplotlib.pyplot as plt
 
-# Lets bring over some of the code from neural_networks_pt_1.py with a few
+# Lets bring over some of the code from 01_inside_the_black_box.py with a few
 # changes. This should look pretty familiar and will be presented mostly without
 # commentary. Review part one if any of this looks confusing.
 
