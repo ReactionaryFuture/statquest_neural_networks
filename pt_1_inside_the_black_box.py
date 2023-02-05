@@ -1,6 +1,6 @@
 
 # To follow along with this code navigate to repo directory in console and
-# run the following command "python3 -i nn_pt_1_inside_the_black_box.py"
+# run the following command "python3 -i pt_1_inside_the_black_box.py"
 # You will then be able to evalue functions as we go along in Python IDLE.
 
 import math as m
