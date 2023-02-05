@@ -1,4 +1,8 @@
 
+# This document is intended as a study companion to go along with "Neural 
+# Networks Pt. 1: Inside the Black Box by StatQuest with Josh Starmer
+# URL: https://www.youtube.com/watch?v=CqOfi41LfDw
+
 # To follow along with this code navigate to repo directory in console and
 # run the following command "python3 -i 01_inside_the_black_box.py"
 # You will then be able to evalue functions as we go along in Python IDLE.
