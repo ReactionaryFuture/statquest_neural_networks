@@ -4,7 +4,7 @@
 # URL: https://www.youtube.com/watch?v=IN2XmBhILt4
 
 # To follow along with this code navigate to repo directory in console and
-# run the following command "python3 -i 02_backpropagation_main_ideas"
+# run the following command "python3 -i 02_backpropagation_main_ideas.py"
 # You will then be able to evalue functions as we go along in Python IDLE.
 
 import math as m
